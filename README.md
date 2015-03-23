@@ -1,0 +1,1 @@
+RabbitMQ with rabbitmq_auth_backend_http.

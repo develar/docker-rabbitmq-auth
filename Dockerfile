@@ -1,4 +1,4 @@
-FROM develar/rabbitmq:3.5.0-management
+FROM rabbitmq:3.5.1-management
 MAINTAINER Vladimir Krivosheev <develar@gmail.com>
 
 RUN apt-get update && apt-get install -y wget --no-install-recommends && \
@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends && \
 
 COPY rabbitmq.config /etc/rabbitmq/rabbitmq.config
 
-EXPOSE 4433
+EXPOSE 5671 4443
